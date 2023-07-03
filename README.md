@@ -1,1 +1,1 @@
-# intro-to-javascript
+# INTRO TO JAVASCRIPT
