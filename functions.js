@@ -71,11 +71,10 @@ const showRestaurant = (cuisine) => {
   console.log("------ Test ------");
   for (let i = 0; i < restaurants.length; i++) {
     if (restaurants[i].cuisine == cuisine) {
-      console.log(`Name: ${restaurants[i].name}`);
-      console.log(`Location: ${restaurants[i].location}`);
+      return restaurants[i];
+      // console.log(`Name: ${restaurants[i].name}`);
+      // console.log(`Location: ${restaurants[i].location}`);
     }
-    return;
-    //console.log(cuisine);
   }
 };
 console.log(showRestaurant("Italian"));
