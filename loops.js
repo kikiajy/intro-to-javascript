@@ -41,3 +41,50 @@ const getFirstPrimeNumBetweenTwoNums = (num1, num2) => {
   return 0;
 };
 console.log(getFirstPrimeNumBetweenTwoNums(8, 30));
+
+//In-built Iterative Methods:
+
+const studentScores = [
+  [7, 8, 10],
+  [9, 5, 10],
+  [7, 3, 7],
+  [6, 4, 9],
+];
+
+//Maps
+["orange", "banana", "apple"].map(function (fruit) {
+  console.log(`The fruit is ${fruit}`);
+});
+
+["orange", "banana", "apple"].map((fruit) => {
+  console.log(`The fruit is ${fruit}`);
+});
+
+const totalScores = studentScores.map((scores) => {
+  return scores[0] + scores[1] + scores[2];
+});
+console.log(totalScores);
+
+//ForEach
+["orange", "banana", "apple"].forEach((fruit) => {
+  console.log(`The fruit is ${fruit}`);
+});
+
+const totalScoresForEach = studentScores.forEach((scores) => {
+  return scores[0] + scores[1] + scores[2];
+});
+console.log(totalScoresForEach);
+
+//Reduce: It takes a list of items and returns just one thing. In the example below, it returns just one object. That's what the reduce does.
+const students = ["Adam", "Tobi", "Korede", "Chioma"];
+const studentScoresObject = studentScores.reduce(
+  (previousValue, currentValue, currentIndex) => {
+    const currentStudent = students[currentIndex];
+    previousValue[currentStudent] = currentValue;
+    return previousValue;
+  },
+  {} //intial value is this empty object
+);
+console.log(studentScoresObject);
+
+//Assignment: find how to use concat method.
