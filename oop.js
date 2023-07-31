@@ -1,3 +1,5 @@
+import * as shop from "./export.js";
+
 //Object Oriented Programming (OOP)
 // In OOP, we build things around objects with properties and methods.
 //The properties are what the object has and the methods are what the objects can do.
@@ -181,3 +183,5 @@ myAccount.withdraw(300, "Kiki Ajayi");
 myAccount.deposit(500, "Kiki Ajayi");
 myAccount.withdraw(300, "Kiki Ajayi");
 myAccount.getStatement();
+
+shop.printShoppingList(shop.shoppingList);

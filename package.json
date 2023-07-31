@@ -1,0 +1,6 @@
+{
+  "type": "module",
+  "dependencies": {
+    "nigerian-states-and-lgas": "^1.0.8"
+  }
+}
