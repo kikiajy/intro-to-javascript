@@ -88,3 +88,13 @@ const studentScoresObject = studentScores.reduce(
 console.log(studentScoresObject);
 
 //Assignment: find how to use concat method.
+//The concat method joins different strings/arrays together
+const fName = "Kiki";
+const lName = "Ajayi";
+const fullName = fName.concat(` ${lName}`);
+console.log(fullName);
+
+const fiName = ["Kiki"];
+const laName = ["Ajayi"];
+const fuName = fiName.concat(` ${laName}`);
+console.log(fuName);
